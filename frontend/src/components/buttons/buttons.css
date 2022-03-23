@@ -1,0 +1,74 @@
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+}
+.buttons-container > div {
+    background: var(--color-bg-variant);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+
+}
+
+.buttons-container > div:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.light-content{
+    display: grid;
+    row-gap: 1rem;
+}
+
+.lights-buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.scene-content{
+    display: grid;
+    row-gap: 1rem;
+}
+
+.scene-buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* ============== MEDIUM DEVICES (TABLETS) =========== */ 
+
+@media screen and (max-width: 1024px){
+ }
+
+
+/* ============== SMALL DEVICES (MOBILE) =========== */ 
+
+@media screen and (max-width: 600px){
+    .buttons-container {
+        display: grid;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .buttons-container > div {
+        padding: 1rem rem;
+    }
+
+    .lights-buttons{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        
+    }
+
+}
